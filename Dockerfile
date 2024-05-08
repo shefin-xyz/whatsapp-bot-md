@@ -1,8 +1,9 @@
+FROM node:lts-buster
+
+
 
 RUN git clone https://github.com/lyfe00011/whatsapp-bot-md.git /root/LyFE/
 WORKDIR /root/LyFE/
-
-FROM node:lts-buster
 
 RUN apt-get update && \
   apt-get install -y \
